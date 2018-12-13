@@ -2837,12 +2837,12 @@ class Logger(object):
             except IOError as e:
                 pass
 
-    def Log(self, message, output_to_console=True):
+    def Log(self, message):
         """
         Standard Log function.
         Logs to self.file_path, and con_path
         """
-        self.LogWithPrefix("", message, output_to_console)
+        self.LogWithPrefix("", message)
 
     def LogToConsole(self, message):
         """
